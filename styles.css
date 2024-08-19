@@ -1,0 +1,87 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('stopwatch.jpg');
+    background-size: cover; /* Ensures the image covers the entire body */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    margin: 0;
+}
+
+
+.stopwatch-container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    background-image: url('stopwatchcontainer.jpg');
+    background-size: cover; /* Makes the image cover the entire container */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px #e50914, 0 0 20px #e50914;
+}
+.stopwatch-container:hover {
+    border-color: #ff0000fe;
+    box-shadow: 0 0 20px #c707079d, 0 0 40px #b58b1eda;
+}
+.stopwatch-display {
+    font-size: 3rem;
+    padding: 20px;
+    border: 3px solid #e50914;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background-color: #111;
+    color: #fff;
+    text-shadow: 0 0 10px #e50914;
+    transition: all 0.3s ease;
+}
+
+.stopwatch-display:hover {
+    border-color: #f8bfe1c3;
+    box-shadow: 0 0 20px #8b0aa59d, 0 0 40px #cea915;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: #e50914;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e50914;
+    box-shadow: 0px 0px 15px #bc7e1bd1, 0px 0px 30px #000000;
+}
+
+.laps {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.laps li {
+    margin: 5px 0;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.laps li:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
